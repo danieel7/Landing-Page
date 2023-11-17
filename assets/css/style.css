@@ -1,6 +1,7 @@
 :root {
     --primary-color: #420247;
     --white-color: white;
+    --gray-border: #EEEE;
     --gap: 3rem;
 }
 
@@ -79,7 +80,59 @@ h6 {
     min-height: 100vh;
 }
 
+.menu {
+    background-color: var(--white-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: var(--gray-border) 2px solid;
+}
+
+.menu h1{
+    font-size: 2.3rem;
+    color: var(--primary-color);
+}
+
+.menu h1 a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.menu-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+.menu ul li a {
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+  
+.menu ul li a:hover{
+    background: rgba(25, 243, 1, 0.25);
+    transition: all 355ms ease-in-out;
+}
 
 
-
-
+a {
+    text-decoration: none;
+}
